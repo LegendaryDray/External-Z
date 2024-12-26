@@ -5,6 +5,18 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 60;
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Bypassing anti cheats ";
+	Text = "Thanks for choosing us";
+	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+Duration = 60;
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Loading script up.... ";
+	Text = "Wait for it to load";
+	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+Duration = 60;
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Loaded successfully";
 	Text = "Enjoy";
 	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
