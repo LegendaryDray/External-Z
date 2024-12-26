@@ -8,7 +8,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Bypassing anti cheats ";
 	Text = "Join our discord https://discord.gg/SgEsyM5dSr";
 	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 80;
+Duration = 60;
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Loading script up.... ";
@@ -31,8 +31,6 @@ local tab1 = DrRayLibrary.newTab("Main", "ImageIdHere")
 tab1.newLabel("Credits: uniqve (owner) and qweiringss (tester)")
 
 tab1.newLabel(Please join our discord and support us: https://discord.gg/SgEsyM5dSr")
-
-setclipboard("https://discord.gg/aXmrXQH8AF")
 
 tab1.newLabel("Updated")
 
