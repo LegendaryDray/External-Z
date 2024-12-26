@@ -30,6 +30,10 @@ local tab1 = DrRayLibrary.newTab("Main", "ImageIdHere")
 
 tab1.newLabel("Credits: uniqve (owner) and qweiringss (tester)")
 
+tab1.newLabel(Please join our discord and support us: https://discord.gg/SgEsyM5dSr")
+
+setclipboard("https://discord.gg/aXmrXQH8AF")
+
 tab1.newLabel("Updated")
 
 tab1.newLabel("Find more stuff in the last tab")
@@ -668,10 +672,6 @@ tab5.newButton("Update 2: adding more games(to request game contact me on discor
 end)
 
 tab5.newLabel("Click on Update 2 or 4 to copy my discord tag") 
-
-tab5.newButton("Update 3: I may add a keysystem in the future", "Yes sir its self explanatory", function()
-    print("Non")
-end)
 
 tab5.newButton("Update 4: Giving beta tester role (to get it contact me on discord)", "Yes sir its self explanatory", function()
     setclipboard("https://discord.gg/aXmrXQH8AF")
