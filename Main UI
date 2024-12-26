@@ -24,8 +24,6 @@ local tab1 = DrRayLibrary.newTab("Main", "ImageIdHere")
 
 tab1.newLabel("Credits: uniqve (owner) and qweiringss (tester)")
 
-tab1.newLabel(Please join our discord and support us: https://discord.gg/SgEsyM5dSr")
-
 tab1.newLabel("Updated")
 
 tab1.newLabel("Find more stuff in the last tab")
