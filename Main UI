@@ -35,10 +35,10 @@ tab1.newLabel("Usefull stuff")
 print("💫 External Output: Loaded with 0 issues.")
 end, function(err)
     if (string.find(err, "404")) or (string.find(err, "attempt to call a nil value")) then
-        flu:Notify({
+        game:GetService("StarterGui"):SetCore("SendNotification", { 
             Title = "💫  External Can't Start.",
             Content = "Your executor doesn't support External.",
-            Duration = 5
+            Duration = 20
         })
 
 -- 
