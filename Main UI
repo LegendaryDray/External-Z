@@ -13,7 +13,7 @@ Duration = 10;
 
 -- Load UI Library
 local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
-local window = DrRayLibrary:Load("External Z Hub V3.0", "Default")
+local window = DrRayLibrary:Load("External Z Hub V2.0", "Default")
 
 -- CREDITS TAB
 local creditsTab = DrRayLibrary.newTab("Credits", "rbxassetid://5107182114")
@@ -21,7 +21,7 @@ creditsTab.newLabel("Hub Creator: uniqve")
 creditsTab.newLabel("Script Tester: qweiringss")
 creditsTab.newLabel("UI Design: DrRay Library")
 creditsTab.newLabel("Special Thanks: AZYsGithub")
-creditsTab.newLabel("Version: 5.0 Updated")
+creditsTab.newLabel("Version: 2.0 Updated")
 creditsTab.newLabel("Additional Credits: External Z Hub Community")
 
 -- TOOLS TAB
@@ -90,7 +90,7 @@ tab1.newButton("Combat Warriors", "Combat Battle", function()
 end)
 
 tab1.newButton("Blade Ball", "PVP Battle Script", function()
-    loadstring(game:HttpGet(“https://raw.githubusercontent.com/1f0yt/community/main/infernofixed”))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/infernofixed"))();
 end)
 
 -- NEW GAMES TAB 2 (Even more games added)
@@ -343,7 +343,7 @@ searchTab.newInput("Search", "Enter game or script name", function(search)
         ["shindo life"] = "https://rawscripts.net/raw/UPDATE-Shindo-Life-Premier-X-Free-Version-3237",
         ["funky friday"] = "https://rawscripts.net/raw/Autoplayer_278",
         ["combat warriors"] = "https://rawscripts.net/raw/EVENT-UPDCombat-Warriors-25240",
-        ["blade ball"] = "loadstring(game:HttpGet(“https://raw.githubusercontent.com/1f0yt/community/main/infernofixed”))()",
+        ["blade ball"] = "loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/infernofixed"))()",
         ["anime fighting simulator"] = "https://rawscripts.net/raw/Anime-Fighting-Simulator-Script-23562",
         ["murder mystery 2"] = "https://rawscripts.net/raw/Murder-Mystery-2-Script-22143",
         ["bee swarm simulator"] = "https://rawscripts.net/raw/Bee-Swarm-Simulator-Script-22651",
