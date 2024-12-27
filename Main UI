@@ -90,7 +90,7 @@ tab1.newButton("Combat Warriors", "Combat Battle", function()
 end)
 
 tab1.newButton("Blade Ball", "PVP Battle Script", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/BladeBallScript"))()
+    loadstring(game:HttpGet(‘https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV4.lua’))();
 end)
 
 -- NEW GAMES TAB 2
@@ -130,7 +130,7 @@ searchTab.newInput("Search", "Enter game or script name", function(search)
         ["shindo life"] = "https://rawscripts.net/raw/UPDATE-Shindo-Life-Premier-X-Free-Version-3237",
         ["funky friday"] = "https://rawscripts.net/raw/Autoplayer_278",
         ["combat warriors"] = "https://rawscripts.net/raw/EVENT-UPDCombat-Warriors-25240",
-        ["blade ball"] = "https://pastebin.com/raw/BladeBallScript",
+        ["blade ball"] = "loadstring(game:HttpGet(‘https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV4.lua’))();",
         ["anime fighting simulator"] = "https://rawscripts.net/raw/Anime-Fighting-Simulator-Script-23562",
         ["murder mystery 2"] = "https://rawscripts.net/raw/Murder-Mystery-2-Script-22143",
         ["bee swarm simulator"] = "https://rawscripts.net/raw/Bee-Swarm-Simulator-Script-22651"
