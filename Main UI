@@ -2,17 +2,27 @@
 game:GetService("StarterGui"):SetCore("SendNotification", { 
     Title = "Please wait for it";
     Text = "Loading scripts...";
-    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 10;
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
+    Duration = 10;
+})
 
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-    Title = "External Z Hub";
-    Text = "Version 2.0 Loaded!";
-    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 10;
+-- Try loading the UI library and handle errors
+local success, DrRayLibrary = pcall(function()
+    return loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+end)
 
--- Load UI Library
-local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+if not success then
+    -- If the library fails to load, show an error notification
+    game:GetService("StarterGui"):SetCore("SendNotification", { 
+        Title = "Error";
+        Text = "Failed to load UI Library. Please try again later.";
+        Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
+        Duration = 5;
+    })
+    return -- Stop the script if the library cannot be loaded
+end
+
+-- If the library loaded successfully, continue with setting up the UI
 local window = DrRayLibrary:Load("External Z Hub V2.0", "Default")
 
 -- CREDITS TAB
@@ -90,7 +100,7 @@ tab1.newButton("Combat Warriors", "Combat Battle", function()
 end)
 
 tab1.newButton("Blade Ball", "PVP Battle Script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV4.lua"))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV4.lua"))()
 end)
 
 -- NEW GAMES TAB 2
