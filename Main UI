@@ -2,28 +2,18 @@
 game:GetService("StarterGui"):SetCore("SendNotification", { 
     Title = "Please wait for it";
     Text = "Loading scripts...";
-    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
-    Duration = 10;
-})
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+Duration = 10;
 
--- Try loading the UI library and handle errors
-local success, DrRayLibrary = pcall(function()
-    return loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
-end)
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "External Z Hub";
+    Text = "Version 3.0 Loaded!";
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+Duration = 10;
 
-if not success then
-    -- If the library fails to load, show an error notification
-    game:GetService("StarterGui"):SetCore("SendNotification", { 
-        Title = "Error";
-        Text = "Failed to load UI Library. Please try again later.";
-        Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
-        Duration = 5;
-    })
-    return -- Stop the script if the library cannot be loaded
-end
-
--- If the library loaded successfully, continue with setting up the UI
-local window = DrRayLibrary:Load("External Z Hub V2.0", "Default")
+-- Load UI Library
+local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+local window = DrRayLibrary:Load("External Z Hub V3.0", "Default")
 
 -- CREDITS TAB
 local creditsTab = DrRayLibrary.newTab("Credits", "rbxassetid://5107182114")
@@ -100,10 +90,10 @@ tab1.newButton("Combat Warriors", "Combat Battle", function()
 end)
 
 tab1.newButton("Blade Ball", "PVP Battle Script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV4.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV4.lua"))();
 end)
 
--- NEW GAMES TAB 2
+-- NEW GAMES TAB 2 (Even more games added)
 local tab2 = DrRayLibrary.newTab("Games Tab 2", "rbxassetid://10568570622")
 
 tab2.newButton("Anime Fighting Simulator", "Anime Battle Game", function()
@@ -118,7 +108,220 @@ tab2.newButton("Bee Swarm Simulator", "Bee Farming Game", function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Bee-Swarm-Simulator-Script-22651"))()
 end)
 
--- SEARCH TAB
+tab2.newButton("Blox Fruits", "Pirate Adventure Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Blox-Fruits-Script-20664"))()
+end)
+
+tab2.newButton("Pet Simulator X", "Pet Collecting Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Pet-Simulator-X-Script-22843"))()
+end)
+
+tab2.newButton("Build a Boat for Treasure", "Boat Building Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Build-a-Boat-for-Treasure-Script-19183"))()
+end)
+
+tab2.newButton("Lumber Tycoon 2", "Woodcutting Simulator", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Lumber-Tycoon-2-Script-21943"))()
+end)
+
+tab2.newButton("Brookhaven", "Life Simulation Game", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/4w3s0me/0/"))()
+end)
+
+-- Continuation of the previous code
+
+tab2.newButton("Adopt Me!", "Pet Simulation Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Adopt-Me-Script-20782"))()
+end)
+
+tab2.newButton("Anime Revolution", "Anime RPG Adventure", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Anime-Revolution-Script-22564"))()
+end)
+
+tab2.newButton("Super Power Fighting Simulator", "Superhero Fighting Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Super-Power-Fighting-Simulator-Script-22654"))()
+end)
+
+tab2.newButton("Theme Park Tycoon 2", "Theme Park Building Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Theme-Park-Tycoon-2-Script-21573"))()
+end)
+
+tab2.newButton("Arctic Railroad Tycoon", "Train Tycoon Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Arctic-Railroad-Tycoon-Script-20562"))()
+end)
+
+tab2.newButton("Tower Defense Simulator", "Tower Defense Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Tower-Defense-Simulator-Script-22782"))()
+end)
+
+tab2.newButton("Mining Simulator 2", "Mining Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Mining-Simulator-2-Script-20283"))()
+end)
+
+tab2.newButton("Speed Run 4", "Platformer Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Speed-Run-4-Script-21875"))()
+end)
+
+tab2.newButton("SharkBite", "Shark Hunting Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/SharkBite-Script-21462"))()
+end)
+
+-- NEW GAMES TAB 3
+local tab3 = DrRayLibrary.newTab("Games Tab 3", "rbxassetid://10568570622")
+
+tab3.newButton("Flood Escape 2", "Escape the Flood Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Flood-Escape-2-Script-22574"))()
+end)
+
+tab3.newButton("Welcome to Blocksburg", "Life Simulation Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Blocksburg-Script-21098"))()
+end)
+
+tab3.newButton("Murder Mystery X", "Murder Mystery Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Murder-Mystery-X-Script-22164"))()
+end)
+
+tab3.newButton("Shindo Life 2", "Anime RPG", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Shindo-Life-2-Script-22176"))()
+end)
+
+tab3.newButton("All Star Tower Defense", "Tower Defense Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/All-Star-Tower-Defense-Script-22382"))()
+end)
+
+tab3.newButton("Vehicle Legends", "Racing Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Vehicle-Legends-Script-21235"))()
+end)
+
+tab3.newButton("Restaurant Tycoon 2", "Restaurant Building Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Restaurant-Tycoon-2-Script-22912"))()
+end)
+
+tab3.newButton("Lumber Tycoon", "Lumber Tycoon Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Lumber-Tycoon-Script-22919"))()
+end)
+
+tab3.newButton("Bubble Gum Simulator", "Bubble Gum Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Bubble-Gum-Simulator-Script-20245"))()
+end)
+
+tab3.newButton("Jailbreak - Vehicles", "Heist Game with Vehicles", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Jailbreak-Vehicles-Script-21324"))()
+end)
+
+tab2.newButton("Build a Boat for Treasure", "Boat Building Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Build-a-Boat-for-Treasure-Script-19183"))()
+end)
+
+tab2.newButton("Lumber Tycoon 2", "Woodcutting Simulator", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Lumber-Tycoon-2-Script-21943"))()
+end)
+
+tab2.newButton("Brookhaven", "Life Simulation Game", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/4w3s0me/0/"))()
+end)
+
+tab2.newButton("Adopt Me!", "Pet Simulation Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Adopt-Me-Script-30159"))()
+end)
+
+tab2.newButton("Escape Room", "Escape Room Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Escape-Room-Script-25517"))()
+end)
+
+tab2.newButton("Super Bomb Survival", "Explosive Survival Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Super-Bomb-Survival-Script-30242"))()
+end)
+
+-- MORE GAMES TAB 3 (Even more games!)
+local tab3 = DrRayLibrary.newTab("Games Tab 3", "rbxassetid://10568570622")
+
+tab3.newButton("Natural Disaster Survival", "Survival Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Natural-Disaster-Survival-Script-29558"))()
+end)
+
+tab3.newButton("Arsenal V2", "Shooter Game (New Version)", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Arsenal-V2-Script-27539"))()
+end)
+
+tab3.newButton("Theme Park Tycoon", "Theme Park Building Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Theme-Park-Tycoon-Script-20935"))()
+end)
+
+tab3.newButton("Miner's Haven", "Mining Simulator Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Miners-Haven-Script-25020"))()
+end)
+
+tab3.newButton("Murder Mystery X", "MM2 Variant", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Murder-Mystery-X-Script-29384"))()
+end)
+
+tab3.newButton("SharkBite", "Shark Attack Survival Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/SharkBite-Script-27438"))()
+end)
+
+-- NEW GAMES TAB 4 (Even more games!)
+local tab4 = DrRayLibrary.newTab("Games Tab 4", "rbxassetid://10568570622")
+
+tab4.newButton("Speed Run 4", "Speedrun Challenge", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Speedrun-4-Script-25194"))()
+end)
+
+tab4.newButton("Flood Escape 2", "Flood Survival Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Flood-Escape-2-Script-21172"))()
+end)
+
+tab4.newButton("Rogue Lineage", "Anime Fighting RPG", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Rogue-Lineage-Script-23947"))()
+end)
+
+tab4.newButton("Tower Defense Simulator", "Tower Defense Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Tower-Defense-Simulator-Script-25071"))()
+end)
+
+tab4.newButton("Island Royale", "Battle Royale Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Island-Royale-Script-27765"))()
+end)
+
+-- ADMIN TOOLS TAB
+local adminTab = DrRayLibrary.newTab("Admin Tools", "rbxassetid://10568570622")
+
+adminTab.newButton("God Mode", "Become invincible", function()
+    -- Insert God Mode script here
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Example/GodModeScript/main/script.lua"))()
+end)
+
+adminTab.newButton("Fly", "Fly around the game", function()
+    -- Insert Fly script here
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Example/FlyScript/main/script.lua"))()
+end)
+
+adminTab.newButton("Noclip", "Pass through walls", function()
+    -- Insert Noclip script here
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Example/NoclipScript/main/script.lua"))()
+end)
+
+adminTab.newButton("Teleport", "Teleport to any location", function()
+    -- Insert Teleport script here
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Example/TeleportScript/main/script.lua"))()
+end)
+
+adminTab.newButton("Speed Hack", "Increase player speed", function()
+    -- Insert Speed Hack script here
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Example/SpeedHackScript/main/script.lua"))()
+end)
+
+adminTab.newButton("Infinite Jump", "Allow infinite jumps", function()
+    -- Insert Infinite Jump script here
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Example/InfiniteJumpScript/main/script.lua"))()
+end)
+
+adminTab.newButton("Instant Win", "Instant win in certain games", function()
+    -- Insert Instant Win script here
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Example/InstantWinScript/main/script.lua"))()
+end)
+
+-- SEARCH TAB (Now even more search results)
 local searchTab = DrRayLibrary.newTab("Search", "rbxassetid://10568570622")
 local scriptButton -- This will hold the search result button
 
@@ -143,64 +346,34 @@ searchTab.newInput("Search", "Enter game or script name", function(search)
         ["blade ball"] = "https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV4.lua",
         ["anime fighting simulator"] = "https://rawscripts.net/raw/Anime-Fighting-Simulator-Script-23562",
         ["murder mystery 2"] = "https://rawscripts.net/raw/Murder-Mystery-2-Script-22143",
-        ["bee swarm simulator"] = "https://rawscripts.net/raw/Bee-Swarm-Simulator-Script-22651"
+        ["bee swarm simulator"] = "https://rawscripts.net/raw/Bee-Swarm-Simulator-Script-22651",
+        ["blox fruits"] = "https://rawscripts.net/raw/Blox-Fruits-Script-20664",
+        ["pet simulator x"] = "https://rawscripts.net/raw/Pet-Simulator-X-Script-22843",
+        ["build a boat for treasure"] = "https://rawscripts.net/raw/Build-a-Boat-for-Treasure-Script-19183",
+        ["lumber tycoon 2"] = "https://rawscripts.net/raw/Lumber-Tycoon-2-Script-21943",
+        ["brookhaven"] = "https://raw.githubusercontent.com/4w3s0me/0/levelup",
+        ["adopt me"] = "https://rawscripts.net/raw/Adopt-Me-Script-30159",
+        ["escape room"] = "https://rawscripts.net/raw/Escape-Room-Script-25517",
+        ["speed run 4"] = "https://rawscripts.net/raw/Speedrun-4-Script-25194",
+        ["flood escape 2"] = "https://rawscripts.net/raw/Flood-Escape-2-Script-21172",
+        ["rogue lineage"] = "https://rawscripts.net/raw/Rogue-Lineage-Script-23947",
+        ["tower defense simulator"] = "https://rawscripts.net/raw/Tower-Defense-Simulator-Script-25071",
+        ["island royale"] = "https://rawscripts.net/raw/Island-Royale-Script-27765",
+        ["natural disaster survival"] = "https://rawscripts.net/raw/Natural-Disaster-Survival-Script-29558"
     }
 
-    local matchingResults = {}
-
-    -- Check for partial matches
-    for game, scriptLink in pairs(searchResult) do
-        if game:find(search, 1, true) then
-            table.insert(matchingResults, {game = game, scriptLink = scriptLink})
-        end
-    end
-
-    if #matchingResults > 0 then
-        -- Display all matching results
-        for _, result in pairs(matchingResults) do
-            -- Remove existing search result button if any
-            if scriptButton then
-                scriptButton:Destroy()
-            end
-            
-            scriptButton = searchTab.newButton(result.game, "Click to execute the script", function()
-                print("Executing script for: " .. result.game) -- Debugging line
-
-                -- Try loading the script
-                local success, err = pcall(function()
-                    loadstring(game:HttpGet(result.scriptLink))()
-                end)
-
-                if success then
-                    -- Remove the button after script execution
-                    scriptButton:Destroy()
-
-                    -- Optionally show a message when the script is executed
-                    game:GetService("StarterGui"):SetCore("SendNotification", { 
-                        Title = "Script Executed";
-                        Text = "The script for '"..result.game.."' has been executed!";
-                        Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
-                        Duration = 5;
-                    })
-                else
-                    -- If there's an error, print it and show a notification
-                    print("Error executing script: " .. err)
-                    game:GetService("StarterGui"):SetCore("SendNotification", { 
-                        Title = "Script Error";
-                        Text = "An error occurred while executing the script. Please check the output.";
-                        Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
-                        Duration = 5;
-                    })
-                end
-            end)
-        end
+    -- Show search result
+    if searchResult[search] then
+        scriptButton = searchTab.newButton("Result Found: " .. search, "Click to load the script", function()
+            loadstring(game:HttpGet(searchResult[search]))()
+        end)
     else
-        -- Show a specific notification if no matches were found
-        game:GetService("StarterGui"):SetCore("SendNotification", { 
-            Title = "No Results Found";
-            Text = "No scripts matched your search for '"..search.."'. Try another term.";
-            Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
-            Duration = 5;
-        })
-    end
-end)
+        scriptButton = searchTab.newLabel("No results found for: " .. search)
+
+-- FINALIZE UI AND NOTIFICATIONS
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+    Title = "All Scripts Loaded";
+    Text = "All games and tools are ready to use!";
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
+    Duration = 5;
+})
