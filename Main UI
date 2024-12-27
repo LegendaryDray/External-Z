@@ -13,7 +13,7 @@ Duration = 10;
 
 -- Load UI Library
 local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
-local window = DrRayLibrary:Load("External Z Hub V5.0", "Default")
+local window = DrRayLibrary:Load("External Z Hub V2.0", "Default")
 
 -- CREDITS TAB
 local creditsTab = DrRayLibrary.newTab("Credits", "rbxassetid://5107182114")
@@ -90,7 +90,7 @@ tab1.newButton("Combat Warriors", "Combat Battle", function()
 end)
 
 tab1.newButton("Blade Ball", "PVP Battle Script", function()
-    loadstring(game:HttpGet(‘https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV4.lua’))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV4.lua"))();
 end)
 
 -- NEW GAMES TAB 2
