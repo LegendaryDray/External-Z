@@ -1,448 +1,183 @@
+-- Notifications for Loading
 game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "Please wait For it ";
-	Text = "to load";
-	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 60;
+    Title = "Please wait for it";
+    Text = "Loading scripts...";
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+Duration = 30;
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "Loading script up.... ";
-	Text = "Wait for it to load";
-	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 60;
+    Title = "External Z Hub";
+    Text = "Version 5.0 Loaded!";
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+Duration = 30;
 
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "Loaded successfully";
-	Text = "Enjoy";
-	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 60;
-
+-- Load UI Library
 local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
+local window = DrRayLibrary:Load("External Z Hub V5.0", "Default")
 
-local window = DrRayLibrary:Load("External Z Hub x [V.1.0]", "Default")
+-- CREDITS TAB
+local creditsTab = DrRayLibrary.newTab("Credits", "rbxassetid://5107182114")
+creditsTab.newLabel("Hub Creator: uniqve")
+creditsTab.newLabel("Script Tester: qweiringss")
+creditsTab.newLabel("UI Design: DrRay Library")
+creditsTab.newLabel("Special Thanks: AZYsGithub")
+creditsTab.newLabel("Version: 5.0 Updated")
+creditsTab.newLabel("Additional Credits: External Z Hub Community")
 
-local tab1 = DrRayLibrary.newTab("Main", "ImageIdHere") 
+-- TOOLS TAB
+local toolsTab = DrRayLibrary.newTab("Tools", "rbxassetid://10568570622")
 
-tab1.newLabel("Credits: uniqve (owner) and qweiringss (tester)")
-
-tab1.newLabel("Updated")
-
-tab1.newLabel("Find more stuff in the last tab")
-
-tab1.newLabel("Usefull stuff") 
-
-tab1.newButton("Rejoin", "Yes sir its self explanatory", function()
-    game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+toolsTab.newLabel("Performance Tools")
+toolsTab.newButton("FPS Booster", "Improves game performance", function()
+    setfpscap(1000)
 end)
 
-tab1.newButton("Severhop", "joins you in a different server", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/VduBT2nt"))()
+toolsTab.newButton("Anti-AFK", "Prevents being kicked", function()
+    local vu = game:GetService("VirtualUser")
+    game:GetService("Players").LocalPlayer.Idled:connect(function()
+        vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+        wait(1)
+        vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    end)
 end)
 
-tab1.newInput("WalkSpeed", "Changes Your walk speed to the number you type", function(text)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(text)
+toolsTab.newLabel("Fun Tools")
+toolsTab.newButton("Fake Lag", "Fake lag effect", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/FakeLagExample"))()
 end)
 
-tab1.newInput("JumpPower", "Changes Your Jump Power to the number you type", function(text)
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(text)
-end)
-
-tab1.newButton("Script searcher", "Usefull if you dont have an executer with global scripts", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/ScriptSearcher"))()
-end)
-
-tab1.newButton("Keyboard", "Keyboard for mobile", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
-end)
-
-tab1.newButton("Dex explorer", "Dex for mobile you can steal game scripts and delete stuff ext", function()
-    getgenv().Key = "Bash"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3AIY%20Dex",true))()
-end)
-
-tab1.newLabel("Universal") 
-
-tab1.newButton("inf jump", "Gives you inf jump so you can jump forever", function()
-    local InfiniteJumpEnabled = true
-game:GetService("UserInputService").JumpRequest:connect(function()
-	if InfiniteJumpEnabled then
-		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
-	end
-end)
-end)
-
-tab1.newButton("Chat spy [FE]", "Yes sir its self explanatory basically spy on priv chat", function()
+toolsTab.newButton("Chat Spy", "Spy on private chats", function()
     loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Chat-Spy-Script-2104"))()
 end)
 
-tab1.newButton("Noclip", "Makes you walk in walls to use or disable it click e on keyboard", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/yxvrgmMH"))()
+toolsTab.newButton("Roast GUI", "Auto roast players", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Sjskdnsidjskfn/Roast-gui-UPDATED-Version-/main/Roast%20gui%20(UPDATED%20Version)"))()
 end)
 
-tab1.newButton("Fly gui", "A little fly gui will appear that will make you fly", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/zXUSuxbs"))()
-end)
-
-tab1.newButton("Emote gui", "Free emotes that are fe ( not for r6) ", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FEmotesGui/main/FEmotesGui.lua", true))()
-end)
-
-tab1.newButton("Invisible gui", "Gui that makes you go invisible also its fe", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/UniversalInvis.lua", true))()
-end)
-
-tab1.newButton("Animations", "Fe free animations (not for r6) ", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
-end)
-
-tab1.newLabel("Troll")
-
-tab1.newButton("Fake limiteds (Fe)", "You a bitch if you use this", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/fakelimitedsv2/main/fakelimitedsv2", true))()
-end)
-
-tab1.newButton("Fling gui", "Yipee now i copy and paste this into troll cuz its good aint gonna change", function()
+toolsTab.newButton("Fling GUI", "Fling players", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe./main/Fling%20GUI"))()
 end)
 
-tab1.newButton("Rizz gui", "Rizz up the bitches", function()
-    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-rizz-gui-script-6992"))()
-end)
-
-tab1.newButton("Roast gui", "Roast em all", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Sjskdnsidjskfn/Roast-gui-UPDATED-Version-/main/Roast%20gui%20(UPDATED%20Version)"))();
-end)
-
-tab1.newButton("Sing ballin", "Keyboard for mobile", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/EiXcuzTJ",true))()
-end)
-
-tab1.newButton("Unnamed Fe hub", "Op script hub", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Dvrknvss/UniversalFEScriptHub/main/Script'))()
-end)
-
-tab1.newButton("Sussy hub", "Amog us...... Sus.. When imposter is sus(R6) ", function()
-    loadstring(game:HttpGet(('https://gist.githubusercontent.com/Nilrogram/8b0c8bd710be142f383c71f79279752c/raw/e4fb01a7de7cd498bb53270d2ad191dfab268a88/FE%2520SussyHub'),true))();
-end)
-
-tab1.newButton("Simplityv2", "Op Fe hub (R6) ", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/HeyGyt/simplityv2/main/main"))()
-end)
-
-tab1.newButton("Pendulum Hub", "Op Fe hub (R6) ", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
-end)
-
-tab1.newButton("Fake lag", "Activate or deactivate by hitting x on keyboard ", function()
-    loadstring(game:HttpGet("https://paste.gg/p/anonymous/d3492bd620bd4c46b54680ac80b0fa0d/files/161ddd9c992c4ceba3c298458d45188a/raw", true))()
-end) 
-
-tab1.newButton("Noclip", "Makes you walk in walls to use or disable it click e on keyboard", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/yxvrgmMH"))()
-end)
-
-tab1.newButton("Emote gui", "Free emotes that are fe ( not for r6) ", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FEmotesGui/main/FEmotesGui.lua", true))()
-end)
-
-tab1.newButton("Invisible gui", "Gui that makes you go invisible also its fe", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/UniversalInvis.lua", true))()
-end)
-
-local tab2 = DrRayLibrary.newTab("Games", "ImageIdHere")
-
-tab2.newLabel("Simulators or grinding games")
-
-tab2.newLabel("BloxFruits")
-
-tab2.newButton("uranium", "Bloxfruit script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Augustzyzx/UraniumMobile/main/UraniumKak.lua"))()
-end)
-
-tab2.newButton("Hoho hub", "Bloxfruit script", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
-end)
-
-tab2.newButton("Neva Hub", "Bloxfruit script My favorite", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2'))()
-end)
-
-tab2.newButton("Auto Bounty", "Bloxfruit script", function()
-    _G.Team = "Pirate"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/AloneBiNgu/AloneHub/main/BountyV2.lua"))()
-end)
-
-tab2.newButton("Quy Hub (Key) ", "Key link : https://bit.ly/43Nl3tu", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/tngaming123/YTB-TNGaming/main/QuyHub.lua"))()
-end)
-
-tab2.newButton("Qwerty hub", "Bloxfruit script", function()
-    loadstring(game:HttpGet"https://raw.githubusercontent.com/PNguyen0199/Qwerty-Hub/main/Qwerty-Hub.lua")()
-end)
-
-tab2.newButton("AutoFarm Chest", "Bloxfruit script", function()
-    loadstring(game:HttpGet("https://luable.netlify.app/AlchemyHub/ChestFarm.script"))()
-end)
-
-tab2.newButton("Hirimii", "Bloxfruit script", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Hirimii/ScriptBF/main/Loader4.lua'))()
-end)
-
-tab2.newButton("GringoHub", "Bloxfruit script", function()
-    loadstring(game:HttpGet("https://github.com/LeVanNhatIT/GringoHub/raw/main/Loading_Ui/Loading"))()
-end)
-
-tab2.newButton("Law Hub", "Bloxfruit script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BestScriptEverr/Main-/main/Law%20hub"))()
-end)
-
-tab2.newButton("Tryhard (key) ", "Link Get Key : https://bit.ly/3Kbnoay", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/tryharder0009z/TryHardHub/main/TryHardLoader"))()
-end)
-
-tab2.newButton("Upgrade Hub", "Link Get Key : https://bit.ly/3OvESRR", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/UpdateHub123/UpgradeHub/main/UpgradeMain"))()
-end)
-
-tab2.newLabel("Muscle legends")
-
-tab2.newButton("Turbo Hub (key) ", "Muscle legends script", function()
-    loadstring(Game:HttpGet"https://gitlab.com/turbohubz/loader.xyz/loader/-/raw/main/TurboHub-Loader")()
-end)
-
-tab2.newButton("White", "Idk the full name", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/harisiskandar178/Roblox-Script/main/Muscle%20Legend"))()
-end)
-
-tab2.newButton("Red", "Idk the full name", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/jynzl/main/main/Musclas%20Legenos.lua'))()
-end)
-
-tab2.newButton("Speed Hub (Key) ", "Muscle legends scripts", function()
-    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Speed-Hub-X/main/SpeedHubX"))()
-end)
-
-tab2.newLabel("Goal kick simulator")
-
-tab2.newButton("Op script", "It doesnt have a name", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/Scripts/main/GoalKickSimulator"))()
-end)
-
-tab2.newButton("Simple (key) ", "Simple script", function()
-    loadstring(game:HttpGet"https://thedragonslayer2.github.io")()
-end)
-
-tab2.newLabel("Arm wrestle simulator")
-
-tab2.newButton("Lds Hub (key) ", "Op script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/limaspeedy/limaspeedy/main/HubLDS"))()
-end)
-
-tab2.newButton("The Underground War", "Op script for The Underground War", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/StupidProAArsenal/UniqueHub/main/lolz%20underground%20war", true))()
-end)
-
-tab2.newButton("Adopt Me", "Op script for Adopt Me", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Bee-Swarm-Simulator-OP-God-Hub-Auto-Farm-Auto-Items-Auto-Honey-Auto-Quest-I-more-18074", true))()
-end)
+-- GAMES TAB 1 (Expanded)
+local tab1 = DrRayLibrary.newTab("Games Tab 1", "rbxassetid://10568529149")
 
-tab2.newButton("Brookhaven", "Op script for Brookhaven", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-BlueRed-Hub-V19-OP-Hub-25211", true))()
+tab1.newButton("Arsenal", "Shooter Game Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/StupidProAArsenal/UniqueHub/main/arsenal"))()
 end)
 
-tab2.newButton("Murder Mystery 2", "Op script for Murder Mystery 2", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Murder-Mystery-2-Astral-24580", true))()
+tab1.newButton("Bloxburg", "House Building Game", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SurgeDid/Blockburg/main/loader.lua"))()
 end)
 
-tab2.newButton("Arsenal", "Op script for Arsenal", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/StupidProAArsenal/UniqueHub/main/arsenal", true))()
+tab1.newButton("Tower of Hell", "Parkour Challenge", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Tower-of-Hell-STARRY-OP-25216"))()
 end)
 
-tab2.newButton("Bloxburg", "Op script for Bloxburg", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/SurgeDid/Blockburg/main/loader.lua", true))()
+tab1.newButton("Jailbreak", "Heist Adventure", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Jailbreak-BEST-OP-SCRIPT-18726"))()
 end)
 
-tab2.newButton("Shindo Life", "Op script for Shindo Life", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/UPDATE-Shindo-Life-Premier-X-Free-Version-3237", true))()
+tab1.newButton("Shindo Life", "Anime RPG Script", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/UPDATE-Shindo-Life-Premier-X-Free-Version-3237"))()
 end)
 
-tab2.newButton("Tower of Hell", "Op script for Tower of Hell", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Tower-of-Hell-STARRY-OP-AUTO-FARM-FLING-GODMODE-AND-MORE-25216", true))()
+tab1.newButton("Funky Friday", "Rhythm Game Script", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Autoplayer_278"))()
 end)
 
-tab2.newButton("Jailbreak", "Op script for Jailbreak", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Jailbreak-BEST-OP-SCRIPT-WITH-LOTS-OP-FEATURES-18726", true))()
+tab1.newButton("Combat Warriors", "Combat Battle", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/EVENT-UPDCombat-Warriors-25240"))()
 end)
 
-tab2.newButton("Royale High", "Op script for Royale High", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Level-Farm-and-Gem-Farm_88", true))()
+tab1.newButton("Blade Ball", "PVP Battle Script", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/BladeBallScript"))()
 end)
 
-tab2.newButton("Piggy", "Op script for Piggy", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Piggy-BREAKOUT-CHAPTER-Vynixius-4914", true))()
-end)
-
-tab2.newButton("Speed Run 4", "Op script for Speed Run 4", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Gem-Auto-Farm-Star-Auto-Farm-Get-Badges_614", true))()
-end)
-
-tab2.newButton("Natural Disaster Survival", "Op script for Natural Disaster Survival", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Natural-Disaster-Survival-Katers-NDS-Hub-19533", true))()
-end)
-
-tab2.newButton("Bee Swarm Simulator", "Op script for Bee Swarm Simulator", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Bee-Swarm-Simulator-OP-God-Hub-Auto-Farm-Auto-Items-Auto-Honey-Auto-Quest-I-more-18074", true))()
-end)
-
-tab2.newButton("Vehicle Simulator", "Op script for Vehicle Simulator", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Desire-Hub-Universal-Chat-Bypass-AND-MORE-25161", true))()
-end)
-
-tab2.newButton("Theme Park Tycoon 2", "Op script for Theme Park Tycoon 2", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-BlueRed-Hub-V19-OP-Hub-25211", true))()
-end)
-
-tab2.newButton("Flee the Facility", "Op script for Flee the Facility", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-YARHM-12403", true))()
-end)
-
-tab2.newButton("Super Bomb Survival", "Op script for Super Bomb Survival", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-RichScript-20034", true))()
-end)
-
-tab2.newButton("SharkBite", "Op script for SharkBite", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-unfair-Hub-3936", true))()
-end)
-
-tab2.newButton("Murder Mystery X", "Op script for Murder Mystery X", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Shife-Hub-V2-10116", true))()
-end)
-
-tab2.newButton("Breaking Point", "Op script for Breaking Point", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Breaking-Point-plus-12451", true))()
-end)
-
-tab2.newButton("Counter Blox 1", "Op script for Counter Blox 1", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Counter-Blox:-Remastered-FelixWare-V2-6564", true))()
-end)
-
-tab2.newButton("Counter Blox 2", "Op script for Counter Blox 2", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Counter-Blox-2-24715", true))()
-end)
-
-tab2.newButton("Dungeon Quest", "Op script for Dungeon Quest", function()
-    loadstring(game:HttpGet("https://scriptblox.com/script/Dungeon-Quest!-RPG-Adventure-auto-sell-21196", true))()
-end)
-
-tab2.newButton("All Star Tower Defense", "Op script for All Star Tower Defense", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/UPDATE-+-4X-All-Star-Tower-Defense-Script-has-more-than-20-functions-20600", true))()
-end)
-
-tab2.newButton("Funky Friday", "Op script for Funky Friday", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Autoplayer_278", true))()
-end)
-
-tab2.newButton("Anime Fighting Simulator", "Op script for Anime Fighting Simulator", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/RELEASE-Anime-Fighting-Simulator-X-Infinite-Chikara-IBA-HUB-6660", true))()
-end)
-
-tab2.newButton("Combat Warriors", "Op script for Combat Warriors", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/EVENT-+-UPDCombat-Warriors-AP-dot-NET-Stremeable-AutoParry-25240", true))()
-end)
-
-tab2.newButton("Tower Defense Simulator", "Op script for Tower Defense Simulator", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Tower-Defense-Simulator-Simulate-Placing-Towers-5526", true))()
-end)
-
-tab2.newButton("Piggy: Intercity", "Op script for Piggy: Intercity", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Piggy-BREAKOUT-CHAPTER-Vynixius-4914", true))()
-end)
-
-tab2.newButton("Shindo Life 2", "Op script for Shindo Life 2", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Shindo-Life-2-7741", true))()
-end)
-
-tab2.newButton("Roblox High School 2", "Op script for Roblox High School 2", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Roblox-High-School-2-FREE-UGC-item-4321", true))()
-end)
-
-tab2.newButton("Booga Booga", "Op script for Booga Booga", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/BOOGA-BOOGA-Classic-Best-Free-Script-Auto-Farm-AutoKill-OP-2164", true))()
-end)
-
-tab2.newButton("Build A Boat for Treasure", "Op script for Build A Boat for Treasure", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Build-A-Boat-For-Treasure-Projectwre-bot-21190", true))()
-end)
-
-tab2.newButton("SharkBite 2", "Op script for SharkBite 2", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/raimbowo1/test/main/naval", true))()
-end)
-
-tab2.newButton("Zombie Rush", "Op script for Zombie Rush", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/RETARDWAR3/retardware-main/main/Korrupt-Zombies.lua", true))()
-end)
+-- NEW GAMES TAB 2
+local tab2 = DrRayLibrary.newTab("Games Tab 2", "rbxassetid://10568570622")
 
-tab2.newButton("SharkBite", "Op script for SharkBite", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/StupidProAArsenal/UniqueHub/main/sharkbite", true))()
+tab2.newButton("Anime Fighting Simulator", "Anime Battle Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Anime-Fighting-Simulator-Script-23562"))()
 end)
 
-tab2.newButton("Funky Friday", "Op script for Funky Friday", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Bart3kk/funky-friday-autoplay/main/script.lua', true))()
+tab2.newButton("Murder Mystery 2", "Murder Mystery Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Murder-Mystery-2-Script-22143"))()
 end)
 
-tab2.newButton("Tower of Heck", "Op script for Tower of Heck", function()
-    loadstring(game:HttpGet("https://rawscripts.net/raw/Tower-of-Hell-Script(OPEN-SOURCE!)-4096", true))()
+tab2.newButton("Bee Swarm Simulator", "Bee Farming Game", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Bee-Swarm-Simulator-Script-22651"))()
 end)
 
-tab2.newButton("Mega Fun Obby", "Op script for Mega Fun Obby", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/fliptwo/iSPLOIT/main/Mega%20Fun%20Obby", true))()
-end)
-
-tab2.newButton("Script 2 (key) ", "Dupe pets!!!!", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/wrestle24/main/RobloxSim1"))()
-end)
-
-tab2.newButton("Flame hub (key) ", "Nice", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/1Toxin/flame/main/loader"))()
-end)
-
-tab2.newLabel("ninja legends")
-
-tab2.newButton("Proxima hub ", "nice", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
-end)
-
-tab2.newButton("Strike hub", "nice", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/StormSKz12/StirkeHub1/main/Gameincluded"))()
-end)
-
-tab2.newButton("Script 2 (key) ", "Dupe pets!!!!", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/wrestle24/main/RobloxSim1"))()
-end)
-
-tab2.newButton("Script 2 (key) ", "Dupe pets!!!!", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/LOLking123456/wrestle24/main/RobloxSim1"))()
-end)
-
+-- SEARCH TAB
+local searchTab = DrRayLibrary.newTab("Search", "rbxassetid://10568570622")
+local scriptButton -- This will hold the search result button
 
-tab2.newLabel("Elemental dungeon")
+searchTab.newInput("Search", "Enter game or script name", function(search)
+    -- Remove existing search result button if it exists
+    if scriptButton then
+        scriptButton:Destroy()
+    end
 
-tab2.newButton("Elemental dungeon ", "Nice", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0Elemental'))()
-end)
+    -- Normalize the search term to lowercase for case-insensitive matching
+    search = search:lower()
 
-tab2.newLabel("RP")
+    -- Search logic for scripts based on the input
+    local searchResult = {
+        ["arsenal"] = "https://raw.githubusercontent.com/StupidProAArsenal/UniqueHub/main/arsenal",
+        ["bloxburg"] = "https://raw.githubusercontent.com/SurgeDid/Blockburg/main/loader.lua",
+        ["tower of hell"] = "https://rawscripts.net/raw/Tower-of-Hell-STARRY-OP-25216",
+        ["jailbreak"] = "https://rawscripts.net/raw/Jailbreak-BEST-OP-SCRIPT-18726",
+        ["shindo life"] = "https://rawscripts.net/raw/UPDATE-Shindo-Life-Premier-X-Free-Version-3237",
+        ["funky friday"] = "https://rawscripts.net/raw/Autoplayer_278",
+        ["combat warriors"] = "https://rawscripts.net/raw/EVENT-UPDCombat-Warriors-25240",
+        ["blade ball"] = "https://pastebin.com/raw/BladeBallScript",
+        ["anime fighting simulator"] = "https://rawscripts.net/raw/Anime-Fighting-Simulator-Script-23562",
+        ["murder mystery 2"] = "https://rawscripts.net/raw/Murder-Mystery-2-Script-22143",
+        ["bee swarm simulator"] = "https://rawscripts.net/raw/Bee-Swarm-Simulator-Script-22651"
+    }
 
-tab2.newButton("Ice hub", "Ice hub supports alot of rp games Moostly brookhaven", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))() 
-end)
+    local matchingResults = {}
 
-tab2.newLabel("Brookhaven")
+    -- Check for partial matches
+    for game, scriptLink in pairs(searchResult) do
+        if game:find(search, 1, true) then
+            table.insert(matchingResults, {game = game, scriptLink = scriptLink})
+        end
+    end
 
-tab2.newButton("Ice hub", "Ice hub supports alot of rp games Moostly brookhaven", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))() 
-end)
+    if #matchingResults > 0 then
+        -- Display all matching results
+        for _, result in pairs(matchingResults) do
+            -- Remove existing search result button if any
+            if scriptButton then
+                scriptButton:Destroy()
+            end
+            
+            scriptButton = searchTab.newButton(result.game, "Click to execute the script", function()
+                loadstring(game:HttpGet(result.scriptLink))()
+                
+                -- Remove the button after script execution
+                scriptButton:Destroy()
 
-tab2.newButton("Redz hub", "Nice", function()
-    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/REDzHUB/OrionLib/main/Orion')))()
-local gameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
-local Window = OrionLib:MakeWindow({Name = "REDz HUB : "..gameName, HidePremium = false, SaveConfig =
+                -- Optionally show a message when the script is executed
+                game:GetService("StarterGui"):SetCore("SendNotification", { 
+                    Title = "Script Executed";
+                    Text = "The script for '"..result.game.."' has been executed!";
+                    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
+                    Duration = 5;
+                })
+            end)
+        end
+    else
+        -- Show a specific notification if no matches were found
+        game:GetService("StarterGui"):SetCore("SendNotification", { 
+            Title = "No Results Found";
+            Text = "No scripts matched your search for '"..search.."'. Try another term.";
+            Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
+            Duration = 5;
+        })
+    end
+end)
+
+-- FINAL SETUP
+DrRayLibrary:Init()
