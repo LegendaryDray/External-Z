@@ -376,73 +376,9 @@ searchTab.newInput("Search", "Enter game or script name", function(search)
 
 local HttpService = game:GetService("HttpService")
 
--- https://discord.com/api/webhooks/1322185251186802708/ONX6yfbOVebUM75F8RSQwaleVbCZKaZ2LXBKfN9sk6Ar06-_EyvputX6ZP3OvpkIONgg
-local webhookURL = "https://discord.com/api/webhooks/1322185251186802708/ONX6yfbOVebUM75F8RSQwaleVbCZKaZ2LXBKfN9sk6Ar06-_EyvputX6ZP3OvpkIONgg"
-
 -- Secret message and the player details
 local message = "Made by @external v hu"
 local stealDetector = game.Players.LocalPlayer.Name
-
--- The script URL you want to exclude from detection
-local realHubScriptURL = "https://github.com/LegendaryDray/External-Z/edit/main/Main%20UI"
-
--- Function to send the report to the Discord webhook
-local function sendToWebhook(playerName)
-    local data = {
-        ["content"] = "⚠️ Script stolen or misused! ⚠️\nPlayer: " .. playerName .. "\nMessage: " .. message,
-        ["embeds"] = {
-            {
-                ["title"] = "Script Usage Report",
-                ["description"] = "This script has been accessed by a user who is not the creator.",
-                ["color"] = 0xff0000,  -- Red color for alert
-                ["fields"] = {
-                    {
-                        ["name"] = "Player Name",
-                        ["value"] = playerName,
-                        ["inline"] = true
-                    },
-                    {
-                        ["name"] = "Message",
-                        ["value"] = message,
-                        ["inline"] = false
-                    }
-                }
-            }
-        }
-    }
-
-    -- Convert data to JSON format
-    local jsonData = HttpService:JSONEncode(data)
-
-    -- Send HTTP POST request to the Discord webhook
-    local headers = {
-        ["Content-Type"] = "application/json"
-    }
-
-    -- Make the HTTP request
-    HttpService:PostAsync(webhookURL, jsonData, Enum.HttpContentType.ApplicationJson, false, headers)
-end
-
--- Function to check if the script is being used by someone else
-local function checkForStealing()
-    -- Check if the script is the real hub script, and if so, don't detect it
-    if not game:GetService("HttpService"):GetAsync(realHubScriptURL) then
-        -- Proceed with the detection for theft if it's not the real hub script
-        if stealDetector ~= game.Players.LocalPlayer.Name then
-            print("This script has been copied!")
-            -- Log it to your Discord server
-            sendToWebhook(game.Players.LocalPlayer.Name)
-        end
-    else
-        print("Real hub script detected. No theft detection triggered.")
-    end
-end
-
--- Display the hidden message (for testing)
-print("This script was created by: " .. message)
-
--- Run the function to check for script theft
-checkForStealing()
 
 -- FINALIZE UI AND NOTIFICATIONS
 game:GetService("StarterGui"):SetCore("SendNotification", { 
