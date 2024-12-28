@@ -238,7 +238,7 @@ tab3.newButton("🏋️ Fling GUI", "Fling players", function()
 end)
 
 -- GAMES TAB
-tab4.newLabel ("🎮 Games Tab 4")
+tab4.newLabel("🎮 Games Tab 4")
 
 tab4.newButton("🔫 Arsenal", "Shooter Game Script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/StupidProAArsenal/UniqueHub/main/arsenal"))()
