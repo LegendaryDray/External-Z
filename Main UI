@@ -165,7 +165,7 @@ tab1.newButton("🏃 Animations", "FE free animations (not for R6)", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
 end)
 
-tab2.newLabel("😂 Troll")
+local creditsTab = DrRayLibrary.newTab("😂 Troll", "rbxassetid://5107182114")
 
 tab2.newButton("🎭 Fake Limiteds (FE)", "Not recommended for serious use", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/scripthubekitten/fakelimitedsv2/main/fakelimitedsv2", true))()
@@ -219,7 +219,7 @@ tab2.newButton("👻 Invisible GUI", "GUI that makes you go invisible; also it's
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/UniversalInvis.lua", true))()
 end)
 
-tab3.newLabel("🎉 Fun Tools")
+local creditsTab = DrRayLibrary.newTab("🎉 Fun Tools", "rbxassetid://5107182114")
 
 tab3.newButton("⏲️ Fake Lag", "Fake lag effect", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/FakeLagExample"))()
@@ -238,7 +238,7 @@ tab3.newButton("🏋️ Fling GUI", "Fling players", function()
 end)
 
 -- GAMES TAB
-tab4.newLabel("🎮 Games Tab 4")
+local creditsTab = DrRayLibrary.newTab("🎮 Games Tab 4", "rbxassetid://5107182114")
 
 tab4.newButton("🔫 Arsenal", "Shooter Game Script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/StupidProAArsenal/UniqueHub/main/arsenal"))()
@@ -706,7 +706,7 @@ tab4.newButton("🚓 Emergency Response - Liberty County Respawn", "Liberty Coun
 end)
 
 -- ADMIN TOOLS TAB
-tab5.newLabel ("🔧 Admin Tools")
+local creditsTab = DrRayLibrary.newTab("🔧 Admin Tools", "rbxassetid://5107182114")
 
 tab5.newLabel.newButton("⚙️ Iv Admin", "Fe admin script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BloodyBurns/Hex/main/Iv%20Admin%20v3.lua"))()
@@ -729,7 +729,7 @@ tab5.newLabel.newButton("🔧 Nameless Admin", "Fe admin script", function()
 end)
 
 -- UPDATE LOG TAB
-tab6.newLabel.newButton("📋 Update Log", "ImageIdHere")
+local creditsTab = DrRayLibrary.newTab("📋 Update Log", "rbxassetid://5107182114")
 
 tab6.newLabel.newButton("📝 Update Log")
 
