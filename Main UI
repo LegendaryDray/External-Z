@@ -357,7 +357,9 @@ tab5.newButton("Update 2: adding more games(to request game contact us on our di
     setclipboard("https://discord.gg/aXmrXQH8AF")
 end)
 
-tab5.newLabel("Click on Update 2 or 4 to copy our discord server) 
+tab5.newLabel("Click on Update 2 or 4 to copy our discord server)", function()
+    print("Non")
+end)
 
 tab5.newButton("Update 3: I may add a more implementation in the future", "Yes sir its self explanatory", function()
     print("Non")
@@ -368,7 +370,7 @@ tab5.newButton("Update 4: Giving roles (to get it contact me on discord)", "Yes 
 end)
 
 -- Secret message and the player details
-local message = "Made by @external v hu"
+local message = "Made by @external v hub"
 local stealDetector = game.Players.LocalPlayer.Name
     Text = "All games and tools are ready to use!";
     Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
