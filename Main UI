@@ -238,7 +238,7 @@ tab3.newButton("🏋️ Fling GUI", "Fling players", function()
 end)
 
 -- GAMES TAB
-tab4.newLabel("🎉 Fun Tools")("🎮 Games Tab 1")
+tab4.newLabel ("🎮 Games Tab 4")
 
 tab4.newButton("🔫 Arsenal", "Shooter Game Script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/StupidProAArsenal/UniqueHub/main/arsenal"))()
@@ -271,8 +271,6 @@ end)
 tab4.newButton("⚾ Blade Ball", "PVP Battle Script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/No6No6No7yt/Lumin-Hub/main/BladeV4.lua"))()
 end)
-
--- NEW GAMES TAB 4
 
 tab4.newButton("⚔️ Anime Fighting Simulator", "Anime Battle Game", function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Anime-Fighting-Simulator-Script-23562"))()
@@ -708,40 +706,40 @@ tab4.newButton("🚓 Emergency Response - Liberty County Respawn", "Liberty Coun
 end)
 
 -- ADMIN TOOLS TAB
-local adminTab = DrRayLibrary.newTab("🔧 Admin Tools", "rbxassetid://10568570622")
+tab5.newLabel ("🔧 Admin Tools")
 
-adminTab.newButton("⚙️ Iv Admin", "Fe admin script", function()
+tab5.newLabel.newButton("⚙️ Iv Admin", "Fe admin script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BloodyBurns/Hex/main/Iv%20Admin%20v3.lua"))()
 end)
 
-adminTab.newButton("🔄 Infinite Yield", "Fe admin script", function()
+tab5.newLabel.newButton("🔄 Infinite Yield", "Fe admin script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-adminTab.newButton("🔧 Reviz Admin", "Fe admin script", function()
+tab5.newLabel.newButton("🔧 Reviz Admin", "Fe admin script", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/RqaZUrBZ'))()
 end)
 
-adminTab.newButton("🔧 Fates Admin", "Fe admin script", function()
+tab5.newLabel.newButton("🔧 Fates Admin", "Fe admin script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
 end)
 
-adminTab.newButton("🔧 Nameless Admin", "Fe admin script", function()
+tab5.newLabel.newButton("🔧 Nameless Admin", "Fe admin script", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))()
 end)
 
 -- UPDATE LOG TAB
-local tab5 = DrRayLibrary.newTab("📋 Update Log", "ImageIdHere")
+tab6.newLabel.newButton("📋 Update Log", "ImageIdHere")
 
-tab5.newLabel("📝 Update Log")
+tab6.newLabel.newButton("📝 Update Log")
 
-tab5.newLabel("ℹ️ (using buttons to display updates, clicking does nothing)")
+tab6.newLabel("ℹ️ (using buttons to display updates, clicking does nothing)")
 
-tab5.newButton("🔄 Update 1: Added even more stuff and also fixed some stuff", "Yes sir, it's self-explanatory", function()
+tab5.newLabel("🔄 Update 1: Added even more stuff and also fixed some stuff", "Yes sir, it's self-explanatory", function()
     print("Non")
 end)
 
-tab5.newButton("🔄 Update 2: Adding more games (to request a game contact us on our Discord)", "Yes sir, it's self-explanatory", function()
+tab5.newbutton("🔄 Update 2: Adding more games (to request a game contact us on our Discord)", "Yes sir, it's self-explanatory", function()
     setclipboard("https://discord.gg/aXmrXQH8AF")
 end)
 
