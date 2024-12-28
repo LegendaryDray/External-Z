@@ -317,6 +317,271 @@ tab4.newButton("Island Royale", "Battle Royale Game", function()
     loadstring(game:HttpGet("https://rawscripts.net/raw/Island-Royale-Script-27765"))()
 end)
 
+tab4.newButton("Counter Blox - Remastered Most P Script", "Counter Blox remastered script for an advantage.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Counter-Blox:-Remastered-Most-P-Script-5897"))();
+end)
+
+tab4.newButton("Twisted Space Hub - Autofarm", "Twisted Space Hub with autofarm capabilities.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Twisted-BETA-Twisted-Space-Hub-Autofarm-6123"))();
+end)
+
+tab4.newButton("Friday Night Bloxxin' - Bloxxin Updated Autoplayer", "Autoplayer script for Friday Night Bloxxin'.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/GAME-OVER-Friday-Night-Bloxxin'-Bloxxin-New-Updated-Autoplayer-6421"))();
+end)
+
+tab4.newButton("Universal Fake MM2 GUI", "Fake MM2 GUI with universal compatibility.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Universal-FAKE-MM2-GUI-5847"))();
+end)
+
+tab4.newButton("Destroy the Noob - Buy Everything", "Script to buy everything in Destroy the Noob game.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Destroy-the-Noob-Buy-Everything-5897"))();
+end)
+
+tab4.newButton("NFL Tycoon - Auto Collect Money", "Auto collect money and footballs in NFL Tycoon.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/NFL-Tycoon-AUTO-COLLECT-MONEY-AUTO-BUY-COLLECT-ALL-FOOTBALLS-6351"))();
+end)
+
+tab4.newButton("Apartment Tycoon - Script", "Apartment Tycoon script for easy gameplay.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Apartment-Tycoon-UPD-1!-Apartment-Tycoon-Script-6274"))();
+end)
+
+tab4.newButton("Punch a Brick Wall - Inf Money", "Infinite money for Punch a Brick Wall simulator.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Punch-a-brick-wall-simulator-Punch-Wll-Inf-Money-Op-6307"))();
+end)
+
+tab4.newButton("Car Crash Simulator - All Servers Script", "Car Crash Simulator script for all servers.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Car-Crash-Simulator-UPDATE-16.6-all-servers-script-5902"))();
+end)
+
+tab4.newButton("Combat Warriors - Very OP Script", "Very OP Combat Warriors script for easy wins.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Combat-Warriors-Script-VERY-OP-6143"))();
+end)
+
+tab4.newButton("Universal Adminus Cracked", "Cracked Adminus script for server control.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Adminus-Cracked-6259"))();
+end)
+
+tab4.newButton("Knife Strife - OP Script", "OP script for Knife Strife, giving you an advantage.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/UPDATE-Knife-Strife!-op-6204"))();
+end)
+
+tab4.newButton("Facts Hub - Keyless Script", "Keyless script for Facts Hub with multiple features.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Facts-Hub-Keyless-6257"))();
+end)
+
+tab4.newButton("Q Tool - Universal Script", "Universal script with Q Tool functionality.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Q-Tool-6607"))();
+end)
+
+tab4.newButton("Walmart Land - Trolling Script", "A bit of trolling in Walmart Land with this script.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Walmart-Land-A-little-bit-of-trolling-6080"))();
+end)
+
+tab4.newButton("Dollhouse Roleplay - Claim Coin x10", "Claim 10x coins in Dollhouse Roleplay.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Dollhouse-Roleplay-Dollhouse-RolePlay-Claim-Coin-x10-6497"))();
+end)
+
+tab4.newButton("Redwood Prison - Nameless Hub", "Nameless Hub for Redwood Prison with various features.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Redwood-Prison-Nameless-Hub-6573"))();
+end)
+
+tab4.newButton("Chaos OP Script", "OP script for Chaos game with all features unlocked.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/CHAOS-OP-SCRIPT-6076"))();
+end)
+
+tab4.newButton("Ball and Axe - Auto Win OP", "Auto win script for Ball and Axe game.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/ball-and-axe-Auto-Win-OP-6209"))();
+end)
+
+tab4.newButton("Apeirophobia - OP Script", "OP script for Apeirophobia with various hacks.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Apeirophobia-Script-OP-6275"))();
+end)
+
+tab4.newButton("Dunking Simulator - GUI", "GUI for Dunking Simulator to make gameplay easier.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Dunking-Simulator-Dunking-Simulator-GUI-6508"))();
+end)
+
+tab4.newButton("Tapping Simulator - Script", "Script for Tapping Simulator to automate gameplay.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/UPDATE-Tapping-Simulator-Tapping-Simulator-script-6488"))();
+end)
+
+tab4.newButton("Game Hub v3 - Universal Script", "Game hub script v3 with multiple game features.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Game-hub-v3-by-gamerscripter-6552"))();
+end)
+
+tab4.newButton("New Crates - Stair Tappers Op", "Opener script for New Crates in Stair Tappers.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/New-Crates!-Stair-Tappers!-Op-open-source-6331"))();
+end)
+
+tab4.newButton("Bloody Baseplate - Script", "Script for Bloody Baseplate to unlock features.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Bloody-Baseplate-script-6048"))();
+end)
+
+tab4.newButton("Notoriety - Bored Script", "Script for Notoriety with random features.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Notoriety-Im-just-bored-so-i-found-this-6569"))();
+end)
+
+tab4.newButton("Steal Website Bodies - Script", "Steal website bodies with this universal script.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Steal-Website-Bodies-With-Script-6396"))();
+end)
+
+tab4.newButton("Remove Annoying Beta Menu - Script", "Script to remove the annoying beta menu in Roblox.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-REMOVE-ANNOYING-BETA-CLOSE-MENU-CLOSE-ROBLOX-WITHOUT-BETA-6070"))();
+end)
+
+tab4.newButton("Script Whitelist - Universal Script", "Whitelist script for various games.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Script-Whitelist-6163"))();
+end)
+
+tab4.newButton("Fight - Auto Pickup Guns", "Automatically pick up every gun in Fight.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/fight-Auto-pickup-every-gun-6006"))();
+end)
+
+tab4.newButton("Sheep Tycoon - Gui", "GUI for Sheep Tycoon with added features.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/NEW-Sheep-Tycoon-Sheep-Tycoon-Gui-6324"))();
+end)
+
+tab4.newButton("Da Hood - Repost Lock", "Lock script for Da Hood, preventing any access.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Da-Hood-repost-of-my-da-hood-lock-6541"))();
+end)
+
+tab4.newButton("Chat Bypass OP - Universal Script", "Bypass chat restrictions in Roblox with this script.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Chat-Bypasser-OP-6305"))();
+end)
+
+tab4.newButton("Chat Haxx - Universal Script", "Bypass chat haxx with this universal script.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Chat-Haxx-6128"))();
+end)
+
+tab4.newButton("Shindo Life OP - Infinite Spin", "Shindo Life OP script with infinite spin.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/UPDATE-Shindo-Life-Op-infinite-spin-6306"))();
+end)
+
+tab4.newButton("Universal Script 2016", "A universal script for various functions.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-2016-6335"))();
+end)
+
+tab4.newButton("Aim Assistant - Universal Script", "Universal aim assistant for better accuracy.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Aim-assistant-6012"))();
+end)
+
+tab4.newButton("Very Gud - Universal Script", "A very good universal script for multiple purposes.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Very-gud-6567"))();
+end)
+
+tab4.newButton("Unnamed ESP - Universal Script", "A universal script for Unnamed ESP functions.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-UnnamedESP-6152"))();
+end)
+
+tab4.newButton("Pet Legends 2 - Free GUI", "Free GUI for Pet Legends 2 with a key in description.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/1-Day!!-Pet-Legends-2-free-gui-the-key-in-desc-6390"))();
+end)
+
+tab4.newButton("Da Hood Jojo Script", "JoJo's Bizarre Adventure script for Da Hood.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Da-Hood-jojo-script-dahood-6153"))();
+end)
+
+tab4.newButton("Blox Fruits - Auto Quest", "Blox Fruits auto quest script for easier leveling.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/UPDATE-16-Blox-Fruits-Blox-Fruit-Auto-Quest-6402"))();
+end)
+
+tab4.newButton("No Scope Arcade Aimbot", "Aimbot, ESP, and triggerbot for No Scope Arcade.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/NO-SCOPE-ARCADE-Aimbot-esp-trigger-bot-and-more-6276"))();
+end)
+
+tab4.newButton("Cursed Tank Simulator - E.R.A Anticheat Bypass", "Anticheat bypass for Cursed Tank Simulator.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/cursed-tank-simulatorNew-E.R.A-ANTICHEAT-BYPASS-6263"))();
+end)
+
+tab4.newButton("Ant AFK - Universal Script", "Universal script with AFK functionality.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Ant-Afk-6259"))();
+end)
+
+tab4.newButton("Survive the Night - The Rake GUI", "Survive the night script with The Rake GUI.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Survive-the-Night-The-Rake-Survive-the-Night-GUI-6251"))();
+end)
+
+tab4.newButton("Synapse X Rework", "Reworked version of Synapse X for enhanced script execution.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Synapse-X-Rework-6071"))();
+end)
+
+tab4.newButton("Zombie Lab - Zmod Open Source", "Open-source Zmod script for Zombie Lab with all features.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Zombie-lab-NOW-OPEN-SOURCE-Zmod-6091"))();
+end)
+
+tab4.newButton("Mortem Metallum - Mrtemy GUI OP", "Mrtemy GUI for Mortem Metallum with OP features.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Mortem-Metallum-BETA-Mrtemy-GUI-OP-FIXED-6487"))();
+end)
+
+tab4.newButton("Stone Miner Simulator 2 - Open Battle Pass", "Unlock the Battle Pass Egg for free in Stone Miner Simulator 2.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/UPD-1.1.0Stone-Miner-Simulator-2-Open-Battle-Pass-Egg-For-FREE-6082"))();
+end)
+
+tab4.newButton("Better Chat Bypasser", "Chat bypass script for Roblox to remove restrictions.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Better-Chat-Bypasser-6160"))();
+end)
+
+tab4.newButton("Galaxy Hub - 12 Supported Games", "Universal script with Galaxy Hub support for 12 games.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Galaxy-Hub-12-Supported-Games-6212"))();
+end)
+
+tab4.newButton("Anime Hero Simulator Script", "Script for Anime Hero Simulator to make gameplay easier.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/NEW-Anime-Hero-Simulator-Anime-Hero-Simulator-Script-6273"))();
+end)
+
+tab4.newButton("Project Slayers - AutoTrain Breathing", "AutoTrain Breathing script for Project Slayers.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Project-Slayers-Project-Slayers-AutoTrain-Breathing-5951"))();
+end)
+
+tab4.newButton("Deathrun - Unload Map", "Script to unload the map in Deathrun.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Deathrun-unload-map-5992"))();
+end)
+
+tab4.newButton("DBZ Final Stand - Booga Hub V3", "Booga Hub V3 script for Dragon Ball Z Final Stand.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/DBZ-Final-Stand-DBZ-FINAL-STAND-BOOGA-HUB-V3-5923"))();
+end)
+
+tab4.newButton("Bad Business - Bad Business Lock", "Bad Business Lock for version 2.57.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/OVERHAUL-Bad-Business-2.57-Bad-Business-Lock-5754"))();
+end)
+
+tab4.newButton("Silent Aim - Aimlock Breaker", "Break silent aim or aimlocks in various games.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-break-ppls-silent-aim-aka-aimlocks-5774"))();
+end)
+
+tab4.newButton("Prison Life - Sina Hub", "Sina Hub for Prison Life with cars fixed and extra features.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Prison-Life-(Cars-fixed!)-Sina-Hub-Just-Enjoy-5838"))();
+end)
+
+tab4.newButton("Fe Small Player", "Enable Fe Small player in your game.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Fe-Small-player-6472"))();
+end)
+
+tab4.newButton("Thy Hood - Get Excalibur Sword", "Unlock Excalibur Sword in Thy Hood with this script.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Thy-hood-Get-Excalibur-Sword-5890"))();
+end)
+
+tab4.newButton("Warrior Legends Simulator - Semi KillAura", "Semi KillAura and bypass for Warrior Legends Simulator.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/NEW!-Warrior-Legends-Simulator-semi-killaura-bypass-idk-6440"))();
+end)
+
+tab4.newButton("Kaiju Universe - Re-get Minilla Head", "Script to re-get the Minilla head in Kaiju Universe.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/MINILLA-Kaiju-Universe-re-get-minilla-head-6573"))();
+end)
+
+tab4.newButton("AFK Script", "AFK script to leave the game while still collecting rewards.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-AFK-SCRIPT-6041"))();
+end)
+
+tab4.newButton("Halloween Race Clicker - Script", "Script for Halloween Race Clicker with special features.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Halloween-Race-Clicker-Just-a-script-6526"))();
+end)
+
+
+tab4.newButton("Emergency Response - Liberty County Respawn", "Liberty County respawn script for quick recovery.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Emergency-Response:-Liberty-County-Rrespawn-where-died-6494"))();
+end)
+
 -- ADMIN TOOLS TAB
 local adminTab = DrRayLibrary.newTab("Admin Tools", "rbxassetid://10568570622")
 
@@ -326,7 +591,6 @@ end)
 
 tab4.newButton("infinite yeild", "Fe admin script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
 
 tab4.newButton("Reviz Admin", "Fe admin script", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/RqaZUrBZ'))()
