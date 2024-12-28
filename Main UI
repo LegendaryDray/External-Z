@@ -573,6 +573,87 @@ tab4.newButton("AFK Script", "AFK script to leave the game while still collectin
     loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-AFK-SCRIPT-6041"))();
 end)
 
+tab4.newButton("Universal Alt Control - Fluxus and Synapse Only", "Alt Control script for Fluxus and Synapse only.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-UNIVERSAL-Alt-Control-Fluxus-and-Synapse-Only-6499"))();
+end)
+
+tab4.newButton("Anime Evolution Simulator - OP Script", "OP script for Anime Evolution Simulator with new features.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/UPDATE-3Anime-Evolution-Simulator-OP-NEW-SCRIPT-6282"))();
+end)
+
+tab4.newButton("Vietnam Oil Warfare Tycoon - Autofarm", "Auto farm for Vietnam Oil Warfare Tycoon.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/VIETNAM-Oil-Warfare-Tycoon-Autofarm-5722"))();
+end)
+
+tab4.newButton("Murder Mystery 2 - OP Script + Candy Farm", "Murder Mystery 2 OP script with candy farm.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Murder-Mystery-2-MM2-OP-SCRIPT-PLUS-CANDY-FARM-6548"))();
+end)
+
+tab4.newButton("Plants vs Zombies Garden Problem - Inf Money", "Infinite money for Plants vs Zombies Garden Problem.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/UPDPlants-vs-Zombies-Garden-Problem-INF-MONEY-5926"))();
+end)
+
+tab4.newButton("Tower of Hell - Auto Win", "Auto win script for Tower of Hell.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Tower-of-Hell-script-auto-win-5713"))();
+end)
+
+tab4.newButton("UGC Festival Tycoon - Inf Money", "Get infinite money in UGC Festival Tycoon.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/NEW-UGC-Festival-Tycoon-Inf-Money-6165"))();
+end)
+
+tab4.newButton("Da Hood - Zeus", "Da Hood script with Zeus features.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Da-Hood-Zeus-6361"))();
+end)
+
+tab4.newButton("Idiotic Investing - Everyone", "Update for Idiotic Investing script with everyone features.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/(UPDATE!)-Idiotic-Investing-*****-Everyone-6427"))();
+end)
+
+tab4.newButton("PLS DONATE - Auto Farm Robux", "Auto farm Robux in PLS DONATE.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/PLS-DONATE-NEW-Auto-farm-robux-pls-donate-6280"))();
+end)
+
+tab4.newButton("Synapse Script", "Universal script for Synapse.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Synapse-6047"))();
+end)
+
+tab4.newButton("Hunted Hood - Auto Steal Money", "Auto steal money in Hunted Hood.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Hunted-Hood-Auto-Steal-Money-5728"))();
+end)
+
+tab4.newButton("SHADOVIS RPG - Auto Raid Update", "Auto Raid feature for SHADOVIS RPG with the latest update.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/SHADOVIS-RPG-Auto-Raid-Update-5955"))();
+end)
+
+tab4.newButton("Nameless Admin", "Nameless Admin script with powerful admin commands.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Universal-Script-Nameless-Admin-6567"))();
+end)
+
+tab4.newButton("Build A Boat For Treasure - Bot", "Bot script for Build A Boat For Treasure.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Build-A-Boat-For-Treasure-bot-5720"))();
+end)
+
+tab4.newButton("Impossible Glass Bridge Obby - Squid Game", "Play the Impossible Glass Bridge Obby like in Squid Game.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Impossible-Glass-Bridge-Obby!-(Squid-Game)-Impossible-Glass-Bridge-Obby-5700"))();
+end)
+
+tab4.newButton("Crazy Diamond Rework - YBA Script", "Reworked Crazy Diamond script for Your Bizarre Adventure (YBA).", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Crazy-Diamond-REWORK-Your-Bizarre-Adventure-yba-script-5633"))();
+end)
+
+tab4.newButton("Funky Friday - Auto Farm Boss Lord X", "Auto farm script for Funky Friday with Boss Lord X features.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/SHOP-PREVIEWS-or-Funky-Friday-NEW-UPDATE-SCRIPT-AUTOFARM-BOSS-LORD-X-6293"))();
+end)
+
+tab4.newButton("Murder Mystery 2 - NexusX Hub", "NexusX Hub script for Murder Mystery 2.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Murder-Mystery-2-NexusX-Hub-mm-6570"))();
+end)
+
+tab4.newButton("Destruction Simulator - Inf Money GUI", "Infinite money GUI for Destruction Simulator.", function()
+    loadstring(game:HttpGet("https://scriptblox.com/script/Destruction-Simulator-Inf-Money-GUI-6227"))();
+end)
+
+
 tab4.newButton("Halloween Race Clicker - Script", "Script for Halloween Race Clicker with special features.", function()
     loadstring(game:HttpGet("https://scriptblox.com/script/Halloween-Race-Clicker-Just-a-script-6526"))();
 end)
