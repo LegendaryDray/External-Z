@@ -1,55 +1,105 @@
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-Title = "📢  Please Wait.";
-Text = "External is currently launching, give us a second to authenticate you.";
-Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 60;
+-- Notifications
+local StarterGui = game:GetService("StarterGui")
 
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-Title = "⚙️ Loading script up.... ";
-Text = "⏸️ Wait for it to load";
-Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 60;
+local notifications = {
+    {
+        Title = "📢 Please Wait.",
+        Text = "External is currently launching, give us a second to authenticate you.",
+        Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+        Duration = 60
+    },
+    {
+        Title = "⚙️ Loading script up...",
+        Text = "⏸️ Wait for it to load",
+        Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+        Duration = 60
+    },
+    {
+        Title = "✅ Loaded successfully",
+        Text = "😁 Enjoy",
+        Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150",
+        Duration = 60
+    }
+}
 
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-Title = "✅ Loaded successfully";
-Text = "😁 Enjoy";
-Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-Duration = 60;
+for _, notification in ipairs(notifications) do
+    StarterGui:SetCore("SendNotification", notification)
+end
 
+-- Load DrRay Library
 local DrRayLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/DrRay-UI-Library/main/DrRay.lua"))()
-
 local window = DrRayLibrary:Load("External Z Hub x [V.1.0]", "Default")
 
-local tab1 = DrRayLibrary.newTab("Main", "ImageIdHere") 
+-- Credits Tab
+local creditsTab = DrRayLibrary.newTab("⭐ Credits", "rbxassetid://5107182114")
+creditsTab.newLabel("🌟 Hub Creator: uniqve")
+creditsTab.newLabel("🧪 Script Tester: qweiringss")
+creditsTab.newLabel("🎨 UI Design: DrRay Library")
+creditsTab.newLabel("🙏 Special Thanks: AZYsGithub")
+creditsTab.newLabel("🔄 Version: 5.0 Updated")
+creditsTab.newLabel("🌐 Additional Credits: External Z Hub Community")
 
-tab1.newLabel("Credits: External Team)")
+-- Main Tab
+local mainTab = DrRayLibrary.newTab("🏠 Main", "ImageIdHere")
+mainTab.newLabel("📝 Credits: External Team")
+mainTab.newLabel("🔄 Updated")
+mainTab.newLabel("🔍 Find more stuff in the last tab")
+mainTab.newLabel("🔧 Useful stuff")
 
-tab1.newLabel("Updated")
+-- Tools in Main Tab
+mainTab.newButton("🔄 Rejoin", "Yes sir, it's self-explanatory", function()
+    game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
+end)
 
-tab1.newLabel("Find more stuff in the last tab")
+mainTab.newButton("🔄 Serverhop", "Joins you in a different server", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/VduBT2nt"))()
+end)
 
-tab1.newLabel("Usefull stuff") 
+mainTab.newButton("🔍 Script searcher", "Useful if you don't have an executor with global scripts", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/ScriptSearcher"))()
+end)
 
--- 
+mainTab.newButton("⌨️ Keyboard", "Keyboard for mobile", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
 
--- CREDITS TAB
-local creditsTab = DrRayLibrary.newTab("Credits", "rbxassetid://5107182114")
-creditsTab.newLabel("Hub Creator: uniqve")
-creditsTab.newLabel("Script Tester: qweiringss")
-creditsTab.newLabel("UI Design: DrRay Library")
-creditsTab.newLabel("Special Thanks: AZYsGithub")
-creditsTab.newLabel("Version: 5.0 Updated")
-creditsTab.newLabel("Additional Credits: External Z Hub Community")
+mainTab.newButton("🛠️ Dex explorer", "Dex for mobile to steal game scripts and delete stuff", function()
+    getgenv().Key = "Bash"
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3AIY%20Dex", true))()
+end)
 
--- TOOLS TAB
-local toolsTab = DrRayLibrary.newTab("Tools", "rbxassetid://10568570622")
+mainTab.newLabel("🌐 Universal")
 
-toolsTab.newLabel("Performance Tools")
-toolsTab.newButton("FPS Booster", "Improves game performance", function()
+mainTab.newButton("🦘 Inf Jump", "Gives you infinite jump so you can jump forever", function()
+    local InfiniteJumpEnabled = true
+    game:GetService("UserInputService").JumpRequest:connect(function()
+        if InfiniteJumpEnabled then
+            game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")
+        end
+    end)
+end)
+
+mainTab.newButton("👀 Chat spy [FE]", "Spy on private chat", function()
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Chat-Spy-Script-2104"))()
+end)
+
+mainTab.newButton("🚪 Noclip", "Walk through walls; press 'E' to toggle", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/yxvrgmMH"))()
+end)
+
+mainTab.newButton("✈️ Fly GUI", "A fly GUI to make you fly", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/zXUSuxbs"))()
+end)
+
+-- Tools Tab
+local toolsTab = DrRayLibrary.newTab("🔧 Tools", "rbxassetid://10568570622")
+toolsTab.newLabel("⚙️ Performance Tools")
+
+toolsTab.newButton("⚡ FPS Booster", "Improves game performance", function()
     setfpscap(1000)
 end)
 
-toolsTab.newButton("Anti-AFK", "Prevents being kicked", function()
+toolsTab.newButton("⏲️ Anti-AFK", "Prevents being kicked", function()
     local vu = game:GetService("VirtualUser")
     game:GetService("Players").LocalPlayer.Idled:connect(function()
         vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
