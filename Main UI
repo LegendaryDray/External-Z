@@ -672,6 +672,7 @@ end)
 
 tab4.newButton("infinite yeild", "Fe admin script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
 
 tab4.newButton("Reviz Admin", "Fe admin script", function()
     loadstring(game:HttpGet('https://pastebin.com/raw/RqaZUrBZ'))()
@@ -700,10 +701,6 @@ tab5.newButton("Update 2: adding more games(to request game contact us on our di
 end)
 
 tab5.newLabel("Click on Update 2 or 4 to copy our discord server)", function()
-    print("Non")
-end)
-
-tab5.newButton("Update 3: I may add a more implementation in the future", "Yes sir its self explanatory", function()
     print("Non")
 end)
 
